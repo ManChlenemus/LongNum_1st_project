@@ -7,14 +7,14 @@
 #include <cstdint>
 
 class LongNum {
-public:
+// public:
     int8_t sign = 1;
     std::vector<int> int_part;
     std::vector<int> frac_part;
     long long precision_int; // роль точности и размера целочисленной части
     long long precision_frac; // роль точности и размера дробной части
 
-// public: // Конструкторы + операторы
+public: // Конструкторы + операторы
     LongNum();
 
     explicit LongNum(long double num, int prec_frac = 100, int prec_int = 100);

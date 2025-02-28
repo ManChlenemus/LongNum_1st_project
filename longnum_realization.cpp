@@ -602,7 +602,7 @@ LongNum LongNum::operator/(const LongNum &other) const {
     divisor.precision_frac = divisor.frac_part.size();
     // dividend
     while (dividend.int_part.size() > 1 && dividend.int_part.back() == 0) {
-        result.int_part.pop_back();
+        dividend.int_part.pop_back();
     }
     while (!(dividend.frac_part.empty()) && dividend.frac_part.back() == 0) {
         dividend.frac_part.pop_back();
@@ -619,6 +619,7 @@ LongNum LongNum::operator/(const LongNum &other) const {
         if (!(dividend.int_part[dividend.int_part.size() - 1 - i] == 0 && remainder == 0.0_longnum)) {
             remainder.int_part.insert(remainder.int_part.begin(),
                 dividend.int_part[dividend.int_part.size() - 1 - i]);
+            while (remainder.int_part.back() == 0) remainder.int_part.pop_back();
             remainder.precision_int = remainder.int_part.size(); // важно для сравнения
         }
         if (remainder >= divisor) {
@@ -629,12 +630,17 @@ LongNum LongNum::operator/(const LongNum &other) const {
     }
 
 
+    while (remainder.int_part.back() == 0) {
+        remainder.int_part.pop_back();
+    }
+    remainder.precision_int = remainder.int_part.size();
 
     // Деление дробной части
     size_t i;
     for (i = 0; i < dividend.frac_part.size(); i++) {
         if (!(remainder == 0.0_longnum && dividend.frac_part[i] == 0)) {
             remainder.int_part.insert(remainder.int_part.begin(), dividend.frac_part[i]);
+            while (remainder.int_part.back() == 0) remainder.int_part.pop_back();
             remainder.precision_int = remainder.int_part.size(); // важно для сравнения
         }
         if (remainder >= divisor) {

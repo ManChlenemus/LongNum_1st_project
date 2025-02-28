@@ -8,5 +8,4 @@ add_executable(LongNum
         longnum_realization.cpp
         test.cpp
         catch_amalgamated.cpp
-        main.cpp
 )

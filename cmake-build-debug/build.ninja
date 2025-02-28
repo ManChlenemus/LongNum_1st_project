@@ -67,12 +67,6 @@ build CMakeFiles/LongNum.dir/catch_amalgamated.cpp.obj: CXX_COMPILER__LongNum_un
   OBJECT_DIR = CMakeFiles\LongNum.dir
   OBJECT_FILE_DIR = CMakeFiles\LongNum.dir
 
-build CMakeFiles/LongNum.dir/main.cpp.obj: CXX_COMPILER__LongNum_unscanned_Debug D$:/ClionProjects/LongNum/main.cpp || cmake_object_order_depends_target_LongNum
-  DEP_FILE = CMakeFiles\LongNum.dir\main.cpp.obj.d
-  FLAGS = -O3 -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\LongNum.dir
-  OBJECT_FILE_DIR = CMakeFiles\LongNum.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target LongNum
@@ -81,7 +75,7 @@ build CMakeFiles/LongNum.dir/main.cpp.obj: CXX_COMPILER__LongNum_unscanned_Debug
 #############################################
 # Link the executable LongNum.exe
 
-build LongNum.exe: CXX_EXECUTABLE_LINKER__LongNum_Debug CMakeFiles/LongNum.dir/longnum_realization.cpp.obj CMakeFiles/LongNum.dir/test.cpp.obj CMakeFiles/LongNum.dir/catch_amalgamated.cpp.obj CMakeFiles/LongNum.dir/main.cpp.obj
+build LongNum.exe: CXX_EXECUTABLE_LINKER__LongNum_Debug CMakeFiles/LongNum.dir/longnum_realization.cpp.obj CMakeFiles/LongNum.dir/test.cpp.obj CMakeFiles/LongNum.dir/catch_amalgamated.cpp.obj
   FLAGS = -O3 -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\LongNum.dir
