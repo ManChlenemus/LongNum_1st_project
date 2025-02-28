@@ -12,6 +12,8 @@ LongNum::LongNum() : precision_frac(0), precision_int(1) {
     int_part.push_back(0);
 }
 
+LongNum::~LongNum() = default;
+
 LongNum::LongNum(const LongNum &num) : sign(num.sign),
                                        precision_frac(num.precision_frac),
                                        precision_int(num.precision_int) {

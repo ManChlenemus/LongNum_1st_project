@@ -25,6 +25,8 @@ public: // Конструкторы + операторы
 
     LongNum &operator=(const LongNum &other);
 
+    ~LongNum();
+
 
     // Классические (арифметические) операторы
     LongNum operator+(const LongNum& other) const;
