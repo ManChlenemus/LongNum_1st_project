@@ -1,5 +1,5 @@
 #define CATCH_CONFIG_MAIN
-#include "longnum.h"
+#include "longnum.hpp"
 #include "catch_amalgamated.hpp"
 
 

@@ -9,3 +9,6 @@
 2	479	7624710016806459	build.ninja	b0de7969b447846d
 21	3216	7624710153950091	CMakeFiles/LongNum.dir/test.cpp.obj	afea0eb48c401a2c
 3217	4782	7624710185898547	LongNum.exe	46d6257482365f94
+18	1941	7624736437312281	CMakeFiles/LongNum.dir/longnum_realization.cpp.obj	1d63dbccfbbfde71
+23	3417	7624736437363094	CMakeFiles/LongNum.dir/test.cpp.obj	afea0eb48c401a2c
+3417	5000	7624736471300094	LongNum.exe	46d6257482365f94
