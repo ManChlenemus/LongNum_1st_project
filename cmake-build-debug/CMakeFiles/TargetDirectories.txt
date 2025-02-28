@@ -1,0 +1,3 @@
+D:/ClionProjects/LongNum/cmake-build-debug/CMakeFiles/LongNum.dir
+D:/ClionProjects/LongNum/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/ClionProjects/LongNum/cmake-build-debug/CMakeFiles/rebuild_cache.dir
