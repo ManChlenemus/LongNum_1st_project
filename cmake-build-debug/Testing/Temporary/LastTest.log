@@ -1,3 +1,129 @@
-Start testing: Feb 28 23:37 RTZ 2 (çèìà)
+Start testing: Mar 27 02:00 RTZ 2 (çèìà)
 ----------------------------------------------------------
-End testing: Feb 28 23:37 RTZ 2 (çèìà)
+1/2 Testing: LongNumTests
+1/2 Test: LongNumTests
+Command: "D:/ClionProjects/LongNum_1st_project/cmake-build-debug/tests.exe"
+Directory: D:/ClionProjects/LongNum_1st_project/cmake-build-debug
+"LongNumTests" start time: Mar 27 02:00 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 4108597038
+OK: (result_11 - expr_11).isNull()
+OK: (result_12 - expr_12).isNull()
+OK: (result_13 - expr_13).isNull()
+OK: (result_14 - expr_14).isNull()
+OK: (result_21 - expr_21).isNull()
+OK: (result_22 - expr_22).isNull()
+OK: result_31.isNull()
+OK: result_32.isNull()
+OK: result_33.isNull()
+OK: (result_11 - expr_11).isNull()
+OK: (result_12 - expr_12).isNull()
+OK: (result_13 - expr_13).isNull()
+OK: (result_14 - expr_14).isNull()
+OK: (result_21 - expr_21).isNull()
+OK: (result_22 - expr_22).isNull()
+OK: (result_23 - expr_23).isNull()
+OK: result_31.isNull()
+OK: result_33.isNull()
+OK: (result_11 - expr_11).isNull()
+OK: (result_12 - expr_12).isNull()
+OK: (result_13 - expr_13).isNull()
+OK: (result_14 - expr_14).isNull()
+OK: (result_21 - expr_21).isNull()
+OK: (result_22 - expr_22).isNull()
+OK: (result_23 - expr_23).isNull()
+OK: result_31.isNull()
+OK: result_33.isNull()
+OK: (result_11 - expr_11).isNull()
+OK: (result_12 - expr_12).isNull()
+OK: (result_13 - expr_13).isNull()
+OK: (result_14 - expr_14).isNull()
+OK: (result_21 - expr_21).isNull()
+OK: (result_22 - expr_22).isNull()
+OK: (result_23 - expr_23).isNull()
+OK: (result_24 - expr_24).isNull()
+OK: result_31.isNull()
+Division by zero
+OK: result_33.isNull()
+OK: a1 != b1
+OK: a2 == b2
+OK: a3 == b3
+OK: a4 != b4
+OK: a5 != b5
+OK: a6 != b6
+OK: a7 != b7
+OK: a8 != b8
+OK: a9 == b9
+OK: a1 < b1
+OK: a2 >= b2
+OK: a2 <= b2
+OK: a3 <= b3
+OK: a3 >= b3
+OK: a4 < b4
+OK: a5 > b5
+OK: a6 < b6
+OK: a7 < b7
+OK: a8 > b8
+OK: a9 <= b9
+OK: a9 >= b9
+Dec_num: 0
+Bin_num: 0
+[pr_int = 1] [pr_frac = 0]
+Dec_num: 123.456
+Bin_num: 1111011.0111010010111100011010100111111011111001110110110010001011010000111001010110000001000001100010010011
+[pr_int = 7] [pr_frac = 100]
+Dec_num: 123456789.123456789
+Bin_num: 111010110111100110100010101.0001111110011010110111010011011100111001011000110101111100110001001001000010000010000001111001101101
+[pr_int = 27] [pr_frac = 100]
+Dec_num: 12398723453.753718999
+Bin_num: 1011100011000001011000000101111101.11000000111100111011101001110111010111111011001011101101111111100111010110111100010001001011111101
+[pr_int = 34] [pr_frac = 98]
+Dec_num: 123.4559999999999999999999999999996402794272192186167322517742310494792690178655902855098247528076171875
+Bin_num: 1111011.0111010010111100011010100111111011111001110110110010001011010000111001010110000001000001100010010011
+[pr_int = 7] [pr_frac = 100]
+Dec_num: 123456789.1234567889999999999999999999994253166733255674960411331819894187322717016286333091557025909423828125
+Bin_num: 111010110111100110100010101.0001111110011010110111010011011100111001011000110101111100110001001001000010000010000001111001101101
+[pr_int = 27] [pr_frac = 100]
+OK: a.isNull()
+OK: b.isNull()
+OK: c.isNull()
+OK: d.isNull()
+OK: cmp_long_num(x,y) == -1
+OK: cmp_long_num(x,z) == 0
+OK: cmp_long_num(y,z) == 1
+OK: cmp_long_num(z,w) == 0
+Pi: Dec_num: 3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679
+For compare: 3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679
+
+===============================================================================
+All tests passed (66 assertions in 8 test cases)
+
+<end of output>
+Test time =   0.81 sec
+----------------------------------------------------------
+Test Passed.
+"LongNumTests" end time: Mar 27 02:00 RTZ 2 (çèìà)
+"LongNumTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: LongNumTests2
+2/2 Test: LongNumTests2
+Command: "D:/ClionProjects/LongNum_1st_project/cmake-build-debug/tests2.exe"
+Directory: D:/ClionProjects/LongNum_1st_project/cmake-build-debug
+"LongNumTests2" start time: Mar 27 02:00 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Randomness seeded to: 2878829878
+===============================================================================
+All tests passed (19 assertions in 15 test cases)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"LongNumTests2" end time: Mar 27 02:00 RTZ 2 (çèìà)
+"LongNumTests2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 27 02:00 RTZ 2 (çèìà)

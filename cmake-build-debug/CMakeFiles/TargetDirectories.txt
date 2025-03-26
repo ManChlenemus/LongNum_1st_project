@@ -1,3 +1,6 @@
-D:/ClionProjects/LongNum/cmake-build-debug/CMakeFiles/LongNum.dir
-D:/ClionProjects/LongNum/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/ClionProjects/LongNum/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/ClionProjects/LongNum_1st_project/cmake-build-debug/CMakeFiles/LongNum.dir
+D:/ClionProjects/LongNum_1st_project/cmake-build-debug/CMakeFiles/tests.dir
+D:/ClionProjects/LongNum_1st_project/cmake-build-debug/CMakeFiles/tests2.dir
+D:/ClionProjects/LongNum_1st_project/cmake-build-debug/CMakeFiles/test.dir
+D:/ClionProjects/LongNum_1st_project/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/ClionProjects/LongNum_1st_project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
