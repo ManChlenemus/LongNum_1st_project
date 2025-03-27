@@ -381,7 +381,7 @@ LongNum LongNum::operator+(const LongNum &other) const {
                             result.frac_part[0] += 2;
                             result.int_part[0]--;
                         }
-                    } // Случай, когда короткое (по длине) число не имеет дробной части, рассматривать не надо (стр 318-319)
+                    } // Случай, когда короткое (по длине) число не имеет дробной части, рассматривать не надо
                 } else { // longer != bigger (= smaller)
                     for (long long i = 0; i < max_frac_len; i++) {
                         result.frac_part.push_back(0);
@@ -410,7 +410,7 @@ LongNum LongNum::operator+(const LongNum &other) const {
                         }
                         result.frac_part[0] += big_ptr->frac_part[0] - small_ptr->frac_part[0];
                     } else {
-                        result.frac_part[0] -= small_ptr->frac_part[0];
+                        if (max_frac_len != 1) result.frac_part[0] -= small_ptr->frac_part[0];
                     }
 
                     if (result.frac_part[0] < 0) {
@@ -661,7 +661,7 @@ LongNum LongNum::operator/(const LongNum &other) const {
     // }
     // Если число закончилось добавляем нули
     size_t i = 0;
-    while (i < 1000 && remainder != 0.0_longnum) {
+    while (i < 500 && remainder != 0.0_longnum) {
         remainder.int_part.insert(remainder.int_part.begin(), 0);
         remainder.precision_int = remainder.int_part.size(); // важно для сравнения
         if (remainder >= divisor) {

@@ -1,6 +1,6 @@
-#define CATCH_CONFIG_MAIN
 #include "longnum.hpp"
-#include "catch_amalgamated.hpp"
+#include <catch2/catch_test_macros.hpp>
+#include "catch2/benchmark/catch_benchmark.hpp"
 
 
 #define CHECK_WITH_OUTPUT(expr) \
@@ -195,7 +195,6 @@ TEST_CASE("Проверка isNull, StrToBin, cmp_long_num", "[longnum]") {
 
 }
 
-// И выводит и считает пи
 LongNum compute_pi_bbp(int precision, int iterations, int out_pres) {
     LongNum pi("0", precision);
     LongNum sixteen("16", precision);
@@ -224,11 +223,6 @@ LongNum compute_pi_bbp(int precision, int iterations, int out_pres) {
         pi = pi + term;
         power = power * sixteen;
     }
-    // Выводим результат с out_pres цифрами после запятой
-    std::cout << "Pi: ";
-    pi.print_dec(out_pres);
-    std::cout << "For compare: 3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679" << std::endl;
-    std::cout << std::endl;
     return pi;
 }
 
@@ -236,8 +230,17 @@ TEST_CASE("Вычисление Пи", "[longnum]") {
     // Устанавливаем точность (количество бит)
     int precision = 110; // двоичная точность вычисления
     int out_pres = 100; // ДЕСЯТИЧНАЯ точность вывода
-    // Количество итераций
     int iterations = 100;
-    // Вычисляем π
     LongNum pi = compute_pi_bbp(precision, iterations, out_pres);
+    // Выводим результат с out_pres цифрами после запятой
+    std::cout << "Pi: ";
+    pi.print_dec(out_pres);
+    std::cout << "For compare: 3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679" << std::endl;
+    std::cout << std::endl;
+}
+
+TEST_CASE("Замер скорости Пи", "[benchmark]") {
+    BENCHMARK("pi100") {
+        return compute_pi_bbp(110, 100, 100);
+    };
 }
